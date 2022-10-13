@@ -1,10 +1,12 @@
 import './App.css';
-import RequestHistory from './pages/request_history.component';
+import RequestExpanded from './pages/RequestExpanded/request_expanded.component';
+import RequestHistory from './pages/RequestHistory/request_history.component';
 
 function App() {
   return (
     <div className="App">
-      <RequestHistory />
+      {/* <RequestHistory /> */}
+      <RequestExpanded />
     </div>
   );
 }
