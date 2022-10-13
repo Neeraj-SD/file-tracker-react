@@ -5,7 +5,7 @@ import RequestHistory from './pages/RequestHistory/request_history.component';
 function App() {
   return (
     <div className="App">
-      {/* <RequestHistory /> */}
+      <RequestHistory />
       <RequestExpanded />
     </div>
   );

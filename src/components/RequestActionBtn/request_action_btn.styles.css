@@ -1,0 +1,49 @@
+.request-btn {
+  width: 119px;
+  height: 43px;
+  margin-block: 16px;
+
+  background: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  /* color: #44545a; */
+}
+
+.add-remark {
+  border: 3px solid #44545a;
+  color: #44545a;
+}
+
+.forward {
+  border: 3px solid #62c4e9;
+  color: #62c4e9;
+}
+
+.approve {
+  border: 3px solid #44be0a;
+  color: #44be0a;
+}
+
+.reject {
+  border: 3px solid #ca0000;
+  color: #ca0000;
+}
+
+.request-btn:hover {
+  /* background-color: #282828;
+    color: white; */
+  animation: ripple 600ms linear;
+}

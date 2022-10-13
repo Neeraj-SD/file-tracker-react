@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/header.component';
+import RequestActionBtn from '../../components/RequestActionBtn/request_action_btn.component';
 
 import '../RequestExpanded/request_expanded.styles.css'
 
@@ -20,17 +21,26 @@ const RequestExpanded = () => (
                         Roll No.`
                     }
                 </p>
-                <div className='divider' />
                 <div className='request-actions'>
+                    <div className='divider' />
                     <div className='remarks-container'>
-                        <span className='action-name'>Add Remark</span>
+
                         <textarea rows='5' cols='5' type='' placeholder='remarks...' className='remarks-input' />
                     </div>
 
-                    <div className='request-btn mb-16'>Add Remark</div>
+                    {/* <div className='request-btn mb-16'>Add Remark</div> */}
+                    <RequestActionBtn className='mb-10' type='add-remark' />
+
                     <div className='remarks-container'>
                         <span className='action-name'>Forward:</span>
-                        <input rows='1' cols='1' type='' placeholder='Forward to' className='forward-to-input' />
+                        <input type='text' placeholder='Forward to' className='forward-to-input' />
+                    </div>
+                    <div className='btn-group'>
+                        <RequestActionBtn type='forward' />
+                        <div></div>
+                        <RequestActionBtn type='approve' />
+                        <RequestActionBtn type='reject' />
+
                     </div>
                 </div>
             </div>
